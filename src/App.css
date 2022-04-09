@@ -1,0 +1,43 @@
+.App{
+  margin: auto;
+  max-width: 1000px;
+}
+.index{
+  display: flex;
+  padding: 10px;
+}
+html{
+  background-color: rgb(210, 247, 247);
+}
+
+.legenda{
+  background-color: rgb(129, 129, 129, 0.3);
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-style: italic;
+  max-height: 350px;
+}
+
+.legendaContainer{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.legendaTitulo{
+  border-bottom: 1px solid black;
+}
+
+.linha{
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.titulo{
+  font-family: 'Grape Nuts', cursive;
+  text-align: center;
+}
