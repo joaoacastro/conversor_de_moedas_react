@@ -14,9 +14,6 @@ export default class Conversor extends Component {
     }
 
     converter(){
-        const moedaA = document.getElementById("moeda_a").value;
-        const moedaB = document.getElementById("moeda_b").value;
-
         let de_para = `${this.props.moedaA}_${this.props.moedaB}`;
         let url = `https://free.currconv.com/api/v7/convert?q=${de_para}&compact=ultra&apiKey=b1460e287d696041ccb1`        
 
