@@ -2,10 +2,12 @@
   margin: auto;
   max-width: 1000px;
 }
+
 .index{
   display: flex;
   padding: 10px;
 }
+
 html{
   background-color: rgb(156, 179, 179);
 }
@@ -28,7 +30,7 @@ html{
 }
 
 .legendaTitulo{
-  border-bottom: 1px solid black;
+  border-bottom: 1.5px dotted black;
 }
 
 .linha{
