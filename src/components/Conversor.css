@@ -5,6 +5,11 @@
     border-radius: 10px;
 }
 
+.entrada{
+    border-radius: 10px;
+    background-color: rgb(156, 179, 179, 0.4);
+}
+
 .conversor{
     background-color: white;
     padding: 20px;

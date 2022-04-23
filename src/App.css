@@ -34,7 +34,6 @@ html{
 }
 
 .linha{
-  
   margin-top: 40px;
   justify-content: space-around;
 }
@@ -42,4 +41,5 @@ html{
 .titulo{
   font-family: 'Grape Nuts', cursive;
   text-align: center;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px blue, 0 0 5px darkblue;
 }
