@@ -1,8 +1,12 @@
 .button{
     cursor: pointer;
-    color: white;
+    color: #dadada;
     background-color: black;
     border-radius: 10px;
+}
+.button:hover{
+    background-color: #dadada;
+    color: black;
 }
 
 .entrada{

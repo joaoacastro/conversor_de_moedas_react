@@ -11,7 +11,7 @@ class App extends Component {
         <div className="index">
           <div className="legendaContainer">
             <div className="legenda">
-              <h3 className='legendaTitulo'>Legenda:</h3>
+              <h3 className='legendaTitulo'>Legenda</h3>
               <p>BRL: Real brasileiro</p>
               <p>USD: Dólar Americano</p>
               <p>EUR: Euro</p>
