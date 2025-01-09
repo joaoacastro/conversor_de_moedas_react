@@ -5,17 +5,23 @@
   margin-top: 50px;
 }
 
-.inputs{
-    display: flex;
+a {
+  text-decoration: none;
+  color: inherit; /* Opcional: mantém a cor do texto herdada */
 }
 
-.inputsContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.inputs {
+  display: flex;
 }
 
-.inputsContainer input {
+.inputsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputsContainer input,
+select {
   margin: 5px;
   padding: 10px;
   font-size: 16px;
@@ -28,9 +34,9 @@
 }
 
 .inputs .from,
-.inputs .to{
-    display: flex;
-    flex-direction: column;
+.inputs .to {
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
@@ -53,6 +59,21 @@ h3 {
   font-size: 18px;
 }
 
-.resultado{
+.resultado {
   display: none;
+}
+
+@media (max-width: 530px) {
+  .inputsContainer .inputValor {
+    display: flex;
+    text-align: center;
+    width: 50%;
+  }
+  .inputs {
+    flex-direction: column;
+  }
+  .button {
+    margin-top: 20px;
+    padding: 10px 100px;
+  }
 }
