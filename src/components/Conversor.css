@@ -22,7 +22,9 @@
 }
 
 .inputsContainer .inputValor {
-    width: 90%;
+  display: flex;
+  text-align: center;
+  width: 90%;
 }
 
 .inputs .from,
@@ -49,4 +51,8 @@ button:hover {
 h3 {
   margin-top: 20px;
   font-size: 18px;
+}
+
+.resultado{
+  display: none;
 }

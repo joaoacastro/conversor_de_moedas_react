@@ -26,6 +26,9 @@ export default class Conversor extends Component {
       .then((json) => {
         const cotacao = json[query];
         if (cotacao) {
+          const classeResultado = document.getElementsByClassName("resultado");
+          classeResultado.style.display = "flex";
+
           const resultado = (parseFloat(valor) * cotacao).toFixed(2);
           this.setState({ resultado });
         } else {
@@ -75,7 +78,7 @@ export default class Conversor extends Component {
         <button type="button" className="button" onClick={this.converter}>
           Converter
         </button>
-        <h3>Resultado: {this.state.resultado}</h3>
+        <h3 className="resultado">Resultado: {this.state.resultado}</h3>
       </div>
     );
   }
