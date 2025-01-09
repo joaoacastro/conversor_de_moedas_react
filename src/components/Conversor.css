@@ -1,24 +1,52 @@
-.button{
-    cursor: pointer;
-    color: #dadada;
-    background-color: black;
-    border-radius: 10px;
-}
-.button:hover{
-    background-color: #dadada;
-    color: black;
+.conversor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.entrada{
-    border-radius: 10px;
-    background-color: rgb(156, 179, 179, 0.4);
+.inputs{
+    display: flex;
 }
 
-.conversor{
-    background-color: white;
-    padding: 20px;
-    max-width: 300px;
-    margin:20px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+.inputsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputsContainer input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.inputsContainer .inputValor {
+    width: 90%;
+}
+
+.inputs .from,
+.inputs .to{
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 200px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 18px;
 }
