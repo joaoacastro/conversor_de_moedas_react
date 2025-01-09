@@ -27,3 +27,9 @@ html{
     font-size: 28px;
   }
 }
+
+@media (max-width: 350px) {
+  h1{
+    font-size: 20px;
+  }
+}

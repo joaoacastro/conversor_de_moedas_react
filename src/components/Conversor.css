@@ -64,6 +64,12 @@ h3 {
 }
 
 @media (max-width: 530px) {
+  select{
+  padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
   .inputsContainer .inputValor {
     display: flex;
     text-align: center;
@@ -75,5 +81,11 @@ h3 {
   .button {
     margin-top: 20px;
     padding: 10px 100px;
+  }
+}
+@media (max-width: 350px) {
+  .button {
+    margin-top: 20px;
+    padding: 10px 80px;
   }
 }
