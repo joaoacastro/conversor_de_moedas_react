@@ -1,7 +1,8 @@
 import React from "react";
+import { slide as Menu } from "react-burger-menu"; // Importando o componente de menu hambúrguer
 import "./Menu.css";
 
-const Menu = () => {
+const MenuComponent = () => {
   return (
     <div>
       <header className="container">
@@ -10,8 +11,9 @@ const Menu = () => {
           <span>Conversor de Moedas</span>
         </div>
 
-        <nav className="nav">
-          <ul>
+        {/* Usando o Menu do react-burger-menu com ajustes */}
+        <Menu right noOverlay disableAutoFocus>
+          <ul className="lista">
             <li>
               <a href="/">Home</a>
             </li>
@@ -22,10 +24,10 @@ const Menu = () => {
               <a href="/contact">Contact</a>
             </li>
           </ul>
-        </nav>
+        </Menu>
       </header>
     </div>
   );
 };
 
-export default Menu;
+export default MenuComponent;
