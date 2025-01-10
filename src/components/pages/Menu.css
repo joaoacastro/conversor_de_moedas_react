@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #dddddd;
+  border-radius: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  list-style: none; /* Remove a bolinha */
+  padding: 0; /* Remove qualquer padding */
+  margin: 0; /* Remove qualquer margem */
+}
+
+.nav li {
+  display: inline-block; /* Faz os itens ficarem lado a lado */
+}
+
+.nav a {
+  color: #000000; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: 0.3s;
+  padding: 10px; /* Adiciona um pouco de espaçamento ao redor dos links */
+}
+
+.nav a:hover {
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}

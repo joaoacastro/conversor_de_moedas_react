@@ -64,8 +64,14 @@ h3 {
 }
 
 @media (max-width: 530px) {
-  select{
-  padding: 15px;
+  .inputsContainer {
+    /* height: 45vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  select {
+    padding: 15px;
     display: flex;
     justify-content: center;
     width: 80vw;
@@ -78,8 +84,25 @@ h3 {
   .inputs {
     flex-direction: column;
   }
+  .inputs .from,
+  .inputs .to,
+  .inputsContainer .inputValor,
+  .button,
+  .resultado{
+    margin-top: 30px;
+  }
+  .inputs select,
+  .inputsContainer .inputValor{
+    height: 50px;
+    border-radius: 2px;
+  }
+  .conversor a{
+    background-color: rgba(122, 122, 122,.5);
+    padding: 40px 5px;
+    border-radius: 7px;
+  }
   .button {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 10px 100px;
   }
 }

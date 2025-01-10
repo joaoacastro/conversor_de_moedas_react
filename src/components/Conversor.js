@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "./Conversor.css";
+import Menu from "./pages/Menu";
 
 export default class Conversor extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      moedaA: "USD",
-      moedaB: "BRL",
+      moedaA: "BRL",
+      moedaB: "USD",
       valor: "",
       resultado: 0,
     };
@@ -50,7 +51,8 @@ export default class Conversor extends Component {
             this.setState({ resultado: `${simbolo} ${resultado}` });
 
             // Mostrar o resultado
-            const classeResultado = document.getElementsByClassName("resultado")[0];
+            const classeResultado =
+              document.getElementsByClassName("resultado")[0];
             classeResultado.style.display = "flex";
           } else {
             alert("Erro ao obter cotação. Moedas inválidas.");
@@ -76,55 +78,62 @@ export default class Conversor extends Component {
     ];
 
     return (
-      <div className="conversor">
-        <a href="https://github.com/joaoacastro" target="_blank" rel="noreferrer">
-          <h1>- Conversor de Moeda -</h1>
-        </a>
-        <div className="inputsContainer">
-          <div className="inputs">
-            <div className="from">
-              <label>De:</label>
-              <select
-                value={this.state.moedaA}
-                onChange={(e) => this.setState({ moedaA: e.target.value })}
-              >
-                {moedasDisponiveis.map((moeda) => (
-                  <option key={moeda.codigo} value={moeda.codigo}>
-                    {moeda.nome}
-                  </option>
-                ))}
-              </select>
+      <div>
+        <Menu />
+        <main className="conversor">
+          <a
+            href="https://github.com/joaoacastro"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h1>- Conversor de Moedas -</h1>
+          </a>
+          <div className="inputsContainer">
+            <div className="inputs">
+              <div className="from">
+                <label>De:</label>
+                <select
+                  value={this.state.moedaA}
+                  onChange={(e) => this.setState({ moedaA: e.target.value })}
+                >
+                  {moedasDisponiveis.map((moeda) => (
+                    <option key={moeda.codigo} value={moeda.codigo}>
+                      {moeda.nome}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="to">
+                <label>Para:</label>
+                <select
+                  value={this.state.moedaB}
+                  onChange={(e) => this.setState({ moedaB: e.target.value })}
+                >
+                  {moedasDisponiveis.map((moeda) => (
+                    <option key={moeda.codigo} value={moeda.codigo}>
+                      {moeda.nome}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
-            <div className="to">
-              <label>Para:</label>
-              <select
-                value={this.state.moedaB}
-                onChange={(e) => this.setState({ moedaB: e.target.value })}
-              >
-                {moedasDisponiveis.map((moeda) => (
-                  <option key={moeda.codigo} value={moeda.codigo}>
-                    {moeda.nome}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
 
-          <br />
-          <input
-            className="inputValor"
-            type="number"
-            placeholder="Valor"
-            value={this.state.valor}
-            onChange={(e) => this.setState({ valor: e.target.value })}
-          />
-        </div>
-        <button type="button" className="button" onClick={this.converter}>
-          Converter
-        </button>
-        <h3 className="resultado" style={{ display: "none" }}>
-          Resultado: {this.state.resultado}
-        </h3>
+            <br />
+            <input
+              className="inputValor"
+              type="number"
+              placeholder="Valor"
+              value={this.state.valor}
+              onChange={(e) => this.setState({ valor: e.target.value })}
+            />
+          </div>
+          <button type="button" className="button" onClick={this.converter}>
+            Converter
+          </button>
+          <h3 className="resultado" style={{ display: "none" }}>
+            Resultado: {this.state.resultado}
+          </h3>
+        </main>
       </div>
     );
   }
