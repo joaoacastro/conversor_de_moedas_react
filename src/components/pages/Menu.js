@@ -7,6 +7,7 @@ const Menu = () => {
       <header className="container">
         <div className="logo">
           <img src="/moeda.png" alt="conversor logo" />
+          <span>Conversor de Moedas</span>
         </div>
 
         <nav className="nav">

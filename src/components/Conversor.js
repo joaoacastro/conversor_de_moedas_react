@@ -81,13 +81,6 @@ export default class Conversor extends Component {
       <div>
         <Menu />
         <main className="conversor">
-          <a
-            href="https://github.com/joaoacastro"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h1>- Conversor de Moedas -</h1>
-          </a>
           <div className="inputsContainer">
             <div className="inputs">
               <div className="from">

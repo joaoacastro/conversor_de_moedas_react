@@ -84,7 +84,7 @@ h3 {
   .inputs {
     flex-direction: column;
   }
-  .inputs .from,
+
   .inputs .to,
   .inputsContainer .inputValor,
   .button,
@@ -95,11 +95,6 @@ h3 {
   .inputsContainer .inputValor{
     height: 50px;
     border-radius: 2px;
-  }
-  .conversor a{
-    background-color: rgba(122, 122, 122,.5);
-    padding: 40px 5px;
-    border-radius: 7px;
   }
   .button {
     /* margin-top: 20px; */

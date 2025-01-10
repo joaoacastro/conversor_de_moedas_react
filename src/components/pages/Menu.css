@@ -39,7 +39,7 @@
   color: #000000; /* Cor do texto */
   text-decoration: none; /* Remove o sublinhado */
   transition: 0.3s;
-  padding: 10px; /* Adiciona um pouco de espaçamento ao redor dos links */
+  padding: 5px; /* Adiciona um pouco de espaçamento ao redor dos links */
 }
 
 .nav a:hover {
