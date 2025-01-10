@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Conversor.css";
-import Menu from "./pages/Menu";
 
 export default class Conversor extends Component {
   constructor(props) {
@@ -79,7 +78,6 @@ export default class Conversor extends Component {
 
     return (
       <div>
-        <Menu />
         <main className="conversor">
           <div className="inputsContainer">
             <div className="inputs">

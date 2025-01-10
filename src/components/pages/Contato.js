@@ -1,11 +1,11 @@
 import React from "react";
-import Menu from "./Menu";
 import "./Contato.css";
+import MenuComponent from "./MenuComponent";
 
 const Contato = () => {
   return (
     <div>
-        <Menu />
+        <MenuComponent />
       <h1>Contato</h1>
     </div>
   );

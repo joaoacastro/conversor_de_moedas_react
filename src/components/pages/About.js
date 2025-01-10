@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.css";
-import Menu from './Menu';
+import Menu from './MenuComponent';
 
 const About = () => {
   return (
