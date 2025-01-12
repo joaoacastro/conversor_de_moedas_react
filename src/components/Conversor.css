@@ -1,15 +1,18 @@
 /* Container principal */
 .conversor-container {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 /* Input e Seletores */
 .input-container {
-  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.input-value {
+  margin: 200px;
 }
 
 .moedas-container {
@@ -17,7 +20,7 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  margin: 10px 0;
+  margin-bottom: 40px;
 }
 
 input[type="number"],
@@ -36,13 +39,15 @@ select {
   border: none;
   border-radius: 50%;
   padding: 10px 10px;
-  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.inverter-btn:hover {
-  background-color: #0056b3;
+.inverter-btn > img{
+  display: block;
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
 }
 
 /* Botão principal */
@@ -66,11 +71,6 @@ h3 {
   margin-top: 20px;
   font-size: 18px;
 }
-.inverter-btn img {
-  width: 20px;
-  height: 20px;
-}
-
 /* Responsividade */
 @media (max-width: 530px) {
   select {

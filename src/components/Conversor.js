@@ -51,9 +51,9 @@ const Conversor = () => {
             <option value="JPY">JPY</option>
             <option value="GBP">GBP</option>
           </select>
-          
+
           <button onClick={inverterMoedas} className="inverter-btn">
-            <img src="/images/ico_cima_baixo.png" alt="Inverter Moedas" />
+          <img src="/images/ico_cima_baixo.png" alt="Inverter Moedas" />
           </button>
 
           <select value={moedaB} onChange={(e) => setMoedaB(e.target.value)}>
@@ -65,6 +65,7 @@ const Conversor = () => {
           </select>
         </div>
         <input
+          className="input-value"
           type="number"
           value={valor}
           onChange={(e) => setValor(e.target.value)}
@@ -77,7 +78,8 @@ const Conversor = () => {
       </button>
       {resultado && (
         <h3>
-          {formatarValor(valor, moedaA)} é equivalente a {formatarValor(resultado, moedaB)}.
+          {formatarValor(valor, moedaA)} é equivalente a{" "}
+          {formatarValor(resultado, moedaB)}.
         </h3>
       )}
     </div>

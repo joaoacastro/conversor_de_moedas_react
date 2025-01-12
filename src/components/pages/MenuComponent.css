@@ -20,15 +20,23 @@
   border-radius: 20px;
 }
 
+.lista a,
 .lista li{
   list-style: none;
-  padding-bottom: 35px;
+  text-decoration: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: #ffffff;
+}
+
+.lista a:hover{
+  color: #444;
 }
 
 /* Personalizando o Menu do react-burger-menu */
 .bm-menu {
   background: #333; /* Cor de fundo do menu */
-  height: 200px !important; /* Adicione !important para forçar a altura */
+  height: 220px !important; /* Adicione !important para forçar a altura */
   width: 150px; /* Largura do menu */
   overflow-y: auto; /* Rolagem apenas se necessário */
   top: 0; /* Alinha ao topo */
@@ -50,11 +58,6 @@
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-}
-
-.bm-item:hover {
-  background: #444;
-  border-radius: 5px;
 }
 
 /* Ajustes no botão do hambúrguer */

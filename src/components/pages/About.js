@@ -1,11 +1,11 @@
 import React from 'react'
 import "./About.css";
-import Menu from './MenuComponent';
+import MenuComponent from './MenuComponent';
 
 const About = () => {
   return (
     <div>
-        <Menu />
+        <MenuComponent />
         <h1>About</h1>
     </div>
   )
