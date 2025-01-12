@@ -1,6 +1,6 @@
 # Corversor de Moedas
 
-<img src="/src/components/print_screen.png" width="500px">
+<img src="./src/assets/print_screen.png" width="500px">
 
 # Getting Started with Create React App
 

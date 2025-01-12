@@ -1,45 +1,52 @@
-.conversor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Container principal */
+.conversor-container {
+  text-align: center;
   margin-top: 50px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit; /* Opcional: mantém a cor do texto herdada */
-}
-
-.inputs {
+/* Input e Seletores */
+.input-container {
+  margin: 20px auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.inputsContainer {
+.moedas-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
 }
 
-.inputsContainer input,
+input[type="number"],
 select {
   margin: 5px;
   padding: 10px;
   font-size: 16px;
-}
-
-.inputsContainer .inputValor {
-  display: flex;
   text-align: center;
-  width: 90%;
+  width: 50vw;
 }
 
-.inputs .from,
-.inputs .to {
-  display: flex;
-  flex-direction: column;
+/* Botão de inverter moedas */
+.inverter-btn {
+  background-color: rgb(164, 167, 170);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.button {
+.inverter-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Botão principal */
+.converter-btn {
   margin-top: 20px;
   padding: 10px 200px;
   font-size: 16px;
@@ -50,60 +57,34 @@ select {
   border-radius: 5px;
 }
 
-button:hover {
+.converter-btn:hover {
   background-color: #45a049;
 }
 
+/* Resultado */
 h3 {
   margin-top: 20px;
   font-size: 18px;
 }
-
-.resultado {
-  display: none;
+.inverter-btn img {
+  width: 20px;
+  height: 20px;
 }
 
+/* Responsividade */
 @media (max-width: 530px) {
-  .inputsContainer {
-    /* height: 45vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   select {
     padding: 15px;
-    display: flex;
-    justify-content: center;
     width: 80vw;
   }
-  .inputsContainer .inputValor {
-    display: flex;
-    text-align: center;
-    width: 50%;
-  }
-  .inputs {
-    flex-direction: column;
-  }
 
-  .inputs .to,
-  .inputsContainer .inputValor,
-  .button,
-  .resultado{
-    margin-top: 30px;
-  }
-  .inputs select,
-  .inputsContainer .inputValor{
-    height: 50px;
-    border-radius: 2px;
-  }
-  .button {
-    /* margin-top: 20px; */
+  .converter-btn {
     padding: 10px 100px;
   }
 }
+
 @media (max-width: 350px) {
-  .button {
-    margin-top: 20px;
+  .converter-btn {
     padding: 10px 80px;
   }
 }

@@ -28,7 +28,7 @@
 /* Personalizando o Menu do react-burger-menu */
 .bm-menu {
   background: #333; /* Cor de fundo do menu */
-  height: 20% !important; /* Adicione !important para forçar a altura */
+  height: 200px !important; /* Adicione !important para forçar a altura */
   width: 150px; /* Largura do menu */
   overflow-y: auto; /* Rolagem apenas se necessário */
   top: 0; /* Alinha ao topo */
