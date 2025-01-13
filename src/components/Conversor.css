@@ -30,6 +30,14 @@ select {
   font-size: 16px;
   text-align: center;
   width: 50vw;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  -webkit-appearance: none;  /* Para Safari e outros navegadores baseados em WebKit */
+  -moz-appearance: none;     /* Para Firefox */
+  appearance: none;          /* Para outros navegadores */
 }
 
 /* Botão de inverter moedas */

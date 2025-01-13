@@ -31,10 +31,12 @@ const MenuComponent = () => {
   return (
     <div ref={menuRef}>
       <header className="container">
-        <div className="logo">
-          <img src="/images/moeda.png" alt="conversor logo" />
-          <span>Conversor de Moedas</span>
-        </div>
+        <Link to="/home" className="tituloMenuComponent">
+          <div className="logo">
+            <img src="/images/moeda.png" alt="conversor logo" />
+            <span>Conversor de Moedas</span>
+          </div>
+        </Link>
 
         {/* Usando o Menu do react-burger-menu com ajustes */}
         <Menu

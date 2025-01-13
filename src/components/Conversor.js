@@ -79,7 +79,7 @@ const Conversor = () => {
       {resultado && (
         <h3>
           {formatarValor(valor, moedaA)} é equivalente a{" "}
-          {formatarValor(resultado, moedaB)}.
+          {formatarValor(resultado, moedaB)}
         </h3>
       )}
     </div>
