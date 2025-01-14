@@ -60,7 +60,11 @@ const Contato = () => {
         <div className="socialMedia">
           <ul>
             <div className="linkedin-container">
-              <a href="https://www.linkedin.com/in/joao-ac-castro/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/joao-ac-castro/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/images/ico_linkedin.png" alt="icone linkedin" />
                 <div className="linkedin">
                   <li>LinkedIn</li>
@@ -69,7 +73,11 @@ const Contato = () => {
               </a>
             </div>
             <div className="github-container">
-              <a href="https://github.com/joaoacastro" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/joaoacastro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/images/ico_github.png" alt="icone github" />
                 <div className="github">
                   <li>GitHub</li>
@@ -78,7 +86,11 @@ const Contato = () => {
               </a>
             </div>
             <div className="instagram-container">
-              <a href="https://www.instagram.com/jonnycastro/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/jonnycastro/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/images/ico_instagram.png" alt="icone instagram" />
                 <div className="instagram">
                   <li>Instagram</li>
@@ -94,7 +106,7 @@ const Contato = () => {
               <label>Nome:</label>
               <input
                 type="text"
-                name="nome"
+                name="from_name" // Corrigido
                 value={formData.from_name}
                 onChange={handleChange}
                 required
@@ -104,7 +116,7 @@ const Contato = () => {
               <label>Email:</label>
               <input
                 type="email"
-                name="email"
+                name="email" // Certo
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -114,7 +126,7 @@ const Contato = () => {
               <label>Assunto:</label>
               <input
                 type="text"
-                name="assunto"
+                name="subject" // Corrigido
                 value={formData.subject}
                 onChange={handleChange}
                 required
@@ -123,7 +135,7 @@ const Contato = () => {
             <div className="mensagemForm">
               <label>Mensagem:</label>
               <textarea
-                name="mensagem"
+                name="message" // Corrigido
                 value={formData.message}
                 onChange={handleChange}
                 required
