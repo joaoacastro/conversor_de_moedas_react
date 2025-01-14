@@ -45,11 +45,11 @@ const Conversor = () => {
       <div className="input-container">
         <div className="moedas-container">
           <select value={moedaA} onChange={(e) => setMoedaA(e.target.value)}>
-            <option value="BRL">BRL</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="GBP">GBP</option>
+            <option value="BRL">Real Brasileiro</option>
+            <option value="USD">Dólar Americano</option>
+            <option value="EUR">Euro</option>
+            <option value="JPY">Iene Japonês</option>
+            <option value="GBP">Libra Esterlina</option>
           </select>
 
           <button onClick={inverterMoedas} className="inverter-btn">
@@ -57,11 +57,11 @@ const Conversor = () => {
           </button>
 
           <select value={moedaB} onChange={(e) => setMoedaB(e.target.value)}>
-            <option value="BRL">BRL</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="GBP">GBP</option>
+            <option value="BRL">Real Brasileiro</option>
+            <option value="USD">Dólar Americano</option>
+            <option value="EUR">Euro</option>
+            <option value="JPY">Iene Japonês</option>
+            <option value="GBP">Libra Esterlina</option>
           </select>
         </div>
         <input
