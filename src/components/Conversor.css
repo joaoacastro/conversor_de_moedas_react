@@ -25,6 +25,10 @@
 
 input[type="number"],
 select {
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  
   margin: 5px;
   padding: 10px;
   font-size: 16px;
@@ -84,8 +88,11 @@ h3 {
   select {
     padding: 15px;
     width: 80vw;
+    height: 80px;
   }
-
+  input[type="number"]{
+    height: 80px;
+  }
   .converter-btn {
     padding: 10px 100px;
   }
