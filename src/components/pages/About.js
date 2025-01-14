@@ -8,7 +8,7 @@ const About = () => {
       <MenuComponent />
       <div className="about">
         <h1>About</h1>
-        <div className="background">
+        <div className="backgroundAbout">
           <p>
             Me chamo João Antônio, sou desenvolvedor Web Front-End com expertise
             em HTML, CSS, JavaScript, React, Node.js e integração de APIs.

@@ -1,7 +1,7 @@
 /* Container principal */
 .conversor-container {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 /* Input e Seletores */
@@ -37,7 +37,7 @@ select {
 
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
 
   -webkit-appearance: none;  /* Para Safari e outros navegadores baseados em WebKit */
   -moz-appearance: none;     /* Para Firefox */
@@ -91,7 +91,7 @@ h3 {
     height: 80px;
   }
   input[type="number"]{
-    height: 80px;
+    height: 50px;
   }
   .converter-btn {
     padding: 10px 100px;

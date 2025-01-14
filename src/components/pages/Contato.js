@@ -56,7 +56,7 @@ const Contato = () => {
       <MenuComponent />
       <h1>Contact</h1>
       <div className="containerContato">
-        <span className="background"></span>
+        <span className="backgroundContact"></span>
         <div className="socialMedia">
           <ul>
             <div className="linkedin-container">

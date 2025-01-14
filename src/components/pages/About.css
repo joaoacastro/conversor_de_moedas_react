@@ -3,31 +3,24 @@
   justify-content: center;
 }
 
-.background {
+.backgroundAbout {
   display: flex;
   justify-content: center;
   text-align: justify;
   flex-direction: column;
   background-color: rgb(88, 88, 88);
+  height: 300px;
 }
 
-.background p{
-    color: #ffffff;
-    padding: 10px 100px;
-}
-
-.about > p {
-  padding: 20px 0;
+.backgroundAbout p {
+  color: #ffffff;
+  padding: 10px 50px;
   display: flex;
   text-align: justify;
 }
 
-@media (max-width: 530px) {
-  .about {
-    padding: 20px 40px;
-  }
-
-  .about > p {
-    padding: 5px 0;
+@media (max-width: 600px) {
+  .backgroundAbout {
+    height: 600px;
   }
 }

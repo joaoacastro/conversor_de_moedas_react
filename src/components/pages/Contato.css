@@ -102,6 +102,17 @@ h1 {
 }
 
 @media (max-width: 780px) {
+  .backgroundContact {
+    display: none;
+  }
+  .socialMedia {
+    background-color: rgb(88, 88, 88);
+  }
+  .linkedin-container a,
+  .github-container a,
+  .instagram-container a {
+    padding: 10px 0;
+  }
   .containerContato {
     display: flex;
     flex-direction: column;
@@ -118,5 +129,8 @@ h1 {
   }
   .socialMedia ul {
     flex-direction: row;
+  }
+  .formContainer {
+    padding: 40px 0;
   }
 }
