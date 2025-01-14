@@ -5,10 +5,10 @@ import MenuComponent from "./MenuComponent";
 
 const Contato = () => {
   const [formData, setFormData] = useState({
-    nome: "",
+    from_name: "",
     email: "",
-    assunto: "",
-    mensagem: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -38,10 +38,10 @@ const Contato = () => {
           );
           alert("Mensagem enviada com sucesso!");
           setFormData({
-            nome: "",
+            from_name: "",
             email: "",
-            assunto: "",
-            mensagem: "",
+            subject: "",
+            message: "",
           }); // Limpa o formulário
         },
         (error) => {
@@ -95,7 +95,7 @@ const Contato = () => {
               <input
                 type="text"
                 name="nome"
-                value={formData.nome}
+                value={formData.from_name}
                 onChange={handleChange}
                 required
               />
@@ -115,7 +115,7 @@ const Contato = () => {
               <input
                 type="text"
                 name="assunto"
-                value={formData.assunto}
+                value={formData.subject}
                 onChange={handleChange}
                 required
               />
@@ -124,7 +124,7 @@ const Contato = () => {
               <label>Mensagem:</label>
               <textarea
                 name="mensagem"
-                value={formData.mensagem}
+                value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
