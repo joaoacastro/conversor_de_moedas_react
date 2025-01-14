@@ -54,7 +54,7 @@ const Contato = () => {
   return (
     <form onSubmit={handleSubmit}>
       <MenuComponent />
-      <h1>Contato</h1>
+      <h1>Contact</h1>
       <div className="containerContato">
         <span className="background"></span>
         <div className="socialMedia">
@@ -64,7 +64,7 @@ const Contato = () => {
                 <img src="/images/ico_linkedin.png" alt="icone linkedin" />
                 <div className="linkedin">
                   <li>LinkedIn</li>
-                  <span>@joao-ac-castro</span>
+                  {/* <span>@joao-ac-castro</span> */}
                 </div>
               </a>
             </div>
@@ -73,7 +73,7 @@ const Contato = () => {
                 <img src="/images/ico_github.png" alt="icone github" />
                 <div className="github">
                   <li>GitHub</li>
-                  <span>@joaoacastro</span>
+                  {/* <span>@joaoacastro</span> */}
                 </div>
               </a>
             </div>
@@ -82,7 +82,7 @@ const Contato = () => {
                 <img src="/images/ico_instagram.png" alt="icone instagram" />
                 <div className="instagram">
                   <li>Instagram</li>
-                  <span>@jonnycastro</span>
+                  {/* <span>@jonnycastro</span> */}
                 </div>
               </a>
             </div>

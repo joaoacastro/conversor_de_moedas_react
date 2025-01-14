@@ -8,6 +8,14 @@
   display: flex;
   justify-content: flex-end;
 }
+.formContainer button {
+  height: 30px;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -17,8 +25,8 @@
   padding: 20px;
 }
 h1 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .nameForm,
 .emailForm,
@@ -50,11 +58,11 @@ h1 {
   color: #ffffff;
 }
 
-.socialMedia ul{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+.socialMedia ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .socialMedia li {
@@ -68,27 +76,47 @@ h1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 0;
+  padding: 30px 0;
   text-decoration: none;
 }
 
 .linkedin-container img,
 .github-container img,
-.instagram-container img{
-    width: 40px;
-    height: 40px;
+.instagram-container img {
+  width: 40px;
+  height: 40px;
 }
 
 .linkedin li,
 .github li,
-.instagram li{
-    font-size: 20px;
-    color: #ffffff;
+.instagram li {
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .linkedin span,
 .github span,
-.instagram span{
-    margin-left: 30px;
-    color: #ffffff;
+.instagram span {
+  margin-left: 30px;
+  color: #ffffff;
+}
+
+@media (max-width: 780px) {
+  .containerContato {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  .linkedin-container img,
+  .github-container img,
+  .instagram-container img {
+    display: none;
+  }
+  .socialMedia ul {
+    flex-direction: row;
+  }
 }
