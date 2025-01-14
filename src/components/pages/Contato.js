@@ -24,10 +24,10 @@ const Contato = () => {
 
     emailjs
       .send(
-        "seu_service_id", // Substitua pelo seu Service ID
-        "seu_template_id", // Substitua pelo seu Template ID
+        "service_tgkrugl", // Substitua pelo seu Service ID
+        "template_rh5tvjd", // Substitua pelo seu Template ID
         formData, // Dados enviados
-        "sua_api_public_key" // Substitua pela sua Public Key
+        "leo-MZW1rwOlTLoV6" // Substitua pela sua Public Key
       )
       .then(
         (response) => {
