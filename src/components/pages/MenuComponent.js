@@ -56,6 +56,9 @@ const MenuComponent = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            <li>
+              <Link to="/api">Api</Link>
+            </li>
           </ul>
         </Menu>
       </header>

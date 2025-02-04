@@ -1,0 +1,26 @@
+.backgroundAPI {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  background-color: rgb(88, 88, 88);
+  height: 300px;
+}
+
+.backgroundAPI p {
+  color: #ffffff;
+  padding: 10px 50px;
+  display: block;
+  text-align: justify;
+}
+
+.backgroundAPI p a {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+  .backgroundAPI {
+    height: 600px;
+  }
+}

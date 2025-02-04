@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Conversor.css";
 
 const Conversor = () => {
-  const [moedaA, setMoedaA] = useState("BRL"); // Moeda inicial A
-  const [moedaB, setMoedaB] = useState("USD"); // Moeda inicial B
+  const [moedaA, setMoedaA] = useState("USD"); // Moeda inicial A
+  const [moedaB, setMoedaB] = useState("BRL"); // Moeda inicial B
   const [valor, setValor] = useState(""); // Valor a ser convertido
   const [resultado, setResultado] = useState(null); // Resultado da conversão
 
