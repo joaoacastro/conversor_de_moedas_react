@@ -35,7 +35,8 @@
 }
 
 .lista a:hover {
-  color: #444;
+  color: #ff0000;
+  font-size: larger;
 }
 
 /* Personalizando o Menu do react-burger-menu */

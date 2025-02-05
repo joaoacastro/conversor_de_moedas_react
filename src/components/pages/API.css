@@ -20,7 +20,13 @@
 }
 
 @media (max-width: 600px) {
+  .containerAPI{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 50px;
+  }
   .backgroundAPI {
-    height: 600px;
+    height: 400px;
   }
 }
